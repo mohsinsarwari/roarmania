@@ -177,6 +177,10 @@ ul {
   padding-left: 2rem;
 }
 
+li {
+  padding-top: 5px;
+}
+
 ol,
 ul,
 dl {
@@ -679,7 +683,7 @@ progress {
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  /*padding-left: calc(var(--bs-gutter-x) * 0.5);*/
   margin-top: var(--bs-gutter-y);
 }
 
@@ -11291,11 +11295,24 @@ html {
 }
 
 header {
-  padding-top: 9.5rem;
-  padding-bottom: 6rem;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,1)), url('../assets/roarmaniabg.png'); 
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 section {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+
+.subsection {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+}
+
