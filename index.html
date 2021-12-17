@@ -1,1 +1,84 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ROARmania</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="jquery.js"></script>
+	<script> 
+		$(function(){
+    		$("#overview").load("overview.html"); 
+    	});
+	</script> 
+	<style>
+	.fakeimg {
+		height: 200px;
+		background: #aaa;
+	}
+	body {
+		position: relative; 
+	}
+	#overview {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+	#design {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+	#implementation {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+	#results {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+	#conclusions {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+	#team {padding-top:50px;height:500px;color: #fff; background-color: #019188;}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">ROARmania</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#overview">Overview</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Design</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Implementation</a>
+			</li>   
+			<li class="nav-item">
+				<a class="nav-link" href="#">Results</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Conclusions</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Team</a>
+			</li>    
+		</ul>
+	</div>  
+</nav>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+	<h1>ROARmania</h1>
+</div>
+
+
+
+<div class="container" style="margin-top:30px">
+	<div id="overview"></div>
+	<div data-include="design"></div>
+	<div data-include="implementation"></div>
+	<div data-include="results"></div>
+	<div data-include="conclusions"></div>
+	<div data-include="team"></div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+	<p>Footer</p>
+</div>
+
+</body>
+</html>
